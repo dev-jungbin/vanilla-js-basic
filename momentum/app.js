@@ -36,3 +36,11 @@ const nonsense = [1, "aa", undefined, null, false, "a"];
 
 console.log(daysOfWeek[4]);
 console.log(nonsense);
+
+console.log(daysOfWeek);
+
+daysOfWeek.push("sat");
+console.log(daysOfWeek);
+
+daysOfWeek.pop();
+console.log(daysOfWeek);
