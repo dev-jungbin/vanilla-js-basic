@@ -29,3 +29,10 @@ console.log("my school ", mySchool);
 
 let something; // undifined
 console.log("someting ", something);
+
+// Array
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri"];
+const nonsense = [1, "aa", undefined, null, false, "a"];
+
+console.log(daysOfWeek[4]);
+console.log(nonsense);
