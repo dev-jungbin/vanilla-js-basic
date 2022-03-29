@@ -44,3 +44,21 @@ console.log(daysOfWeek);
 
 daysOfWeek.pop();
 console.log(daysOfWeek);
+
+// Object
+const player = {
+    name: "jungbin",
+    points: 9999,
+    isGood: true,
+};
+
+console.log(player);
+console.log(player.name);
+console.log(player["isGood"]);
+
+player.secondName = "madilyn";
+console.log(player);
+
+// 궁금한 점
+// 왜 var는 안 쓰지?
+// 왜 ; 세미콜론은 써도 안 써도 상관없지?
