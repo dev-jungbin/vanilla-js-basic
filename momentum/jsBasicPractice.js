@@ -56,9 +56,29 @@ console.log(player);
 console.log(player.name);
 console.log(player["isGood"]);
 
-player.secondName = "madilyn";
+player.secondName = "madilyn"; // 없던 프로퍼티도 추가 가능
 console.log(player);
 
 // 궁금한 점
 // 왜 var는 안 쓰지?
 // 왜 ; 세미콜론은 써도 안 써도 상관없지?
+
+// Function
+function sayHello(nameOfPerson, age) {
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
+sayHello(player.name, 23);
+
+function plus(firstNumber, secondNumber) {
+    console.log(firstNumber + secondNumber);
+}
+
+plus(1, 4);
+
+player.sayHalo = function(otherPersonsName) {
+    console.log("halo! " + otherPersonsName)
+}
+
+player.sayHalo("친구야..");
+
+console.log(player)
