@@ -82,3 +82,27 @@ player.sayHalo = function(otherPersonsName) {
 player.sayHalo("친구야..");
 
 console.log(player)
+
+const calculator = {
+    plus: function(a, b) {
+        return a + b;
+    },
+    minus: function(a, b) {
+        return a - b;
+    },
+    multiple: function(a, b) {
+        return a * b;
+    },
+    divide: function(a, b) {
+        return a / b;
+    },
+    pow: function(a, b) {
+        return a ** b;
+    }
+}
+
+console.log(calculator.plus(1, 3));
+console.log(calculator.minus(5, 2));
+console.log(calculator.multiple(5, 10));
+console.log(calculator.divide(10, 2));
+console.log(calculator.pow(5, 3));
