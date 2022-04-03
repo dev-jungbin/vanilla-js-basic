@@ -83,6 +83,7 @@ player.sayHalo("친구야..");
 
 console.log(player)
 
+// Example: Calculator
 const calculator = {
     plus: function(a, b) {
         return a + b;
@@ -106,3 +107,18 @@ console.log(calculator.minus(5, 2));
 console.log(calculator.multiple(5, 10));
 console.log(calculator.divide(10, 2));
 console.log(calculator.pow(5, 3));
+
+// If
+const age = parseInt(prompt("How old are you?"));
+
+console.log(isNaN(age));
+
+/// parseInt: String -> Number
+/// NaN: Not A Number
+/// isNaN(): Number가 아니면 true, Number면 false를 return
+
+if(isNaN(age)) {
+    console.log("Please enter a number");
+} else {
+    console.log("your age is ", age);
+}
