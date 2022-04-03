@@ -117,8 +117,12 @@ console.log(isNaN(age));
 /// NaN: Not A Number
 /// isNaN(): Number가 아니면 true, Number면 false를 return
 
-if(isNaN(age)) {
-    console.log("Please enter a number");
+if(isNaN(age) || age < 0) {
+    console.log("Please enter a positive number");
+} else if(age < 18) {
+    console.log("You are too young. ", age);
+} else if(age >= 18 && age <= 50) {
+    console.log("You can drink.");
 } else {
-    console.log("your age is ", age);
+    console.log("You can drink but be careful.");
 }
